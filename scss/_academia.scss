@@ -1,0 +1,59 @@
+.contenedor_academy{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 20px;
+    .card{
+        margin-bottom: 10px;
+        .card-header{
+            height: auto;
+            width: 100%;
+            object-position: 50% 50%;
+            object-fit: cover;
+            img{
+                border-radius: 5px 5px 0 0;
+                width: 100%;
+                display: block;
+
+            }
+        }
+        .card-body{
+            border-radius: 0 0 5px 5px;
+            background-color: #fff;
+            padding: 20px 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            .card-description{
+                flex-grow: 1;
+            }
+            .card-title{
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 480px){
+    .contenedor_academy{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:  10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-body{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-header{
+        height: 200px;
+        width: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+    }
+}

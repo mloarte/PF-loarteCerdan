@@ -23,7 +23,7 @@
     grid-auto-flow: dense;
   }
   
-  @media (min-width: 654px) {
+  @media (max-width: 768px) {
     .wide {
       grid-column: span 2;
     }
